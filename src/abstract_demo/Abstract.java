@@ -1,4 +1,4 @@
-package classandobj;
+package abstract_demo;
 
 abstract class Employee {
     abstract void work();

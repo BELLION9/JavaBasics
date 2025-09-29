@@ -1,4 +1,4 @@
-package accessmodifier;
+package access_modifier;
 
 class PrivateExample {
     private int data = 11;

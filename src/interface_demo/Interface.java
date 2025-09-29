@@ -1,4 +1,4 @@
-package classandobj;
+package interface_demo;
 
 interface Vehicle {
 	void start();

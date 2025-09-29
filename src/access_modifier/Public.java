@@ -1,4 +1,4 @@
-package accessmodifier;
+package access_modifier;
 
 class PublicEx {
     public int data = 10; 
