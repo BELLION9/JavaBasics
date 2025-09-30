@@ -7,7 +7,6 @@ public class Library {
 
         student.borrowBook();  
         teacher.borrowBook();   
-
         student.displayInfo();
         teacher.displayInfo();
     }
