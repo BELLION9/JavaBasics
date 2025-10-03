@@ -10,7 +10,7 @@ class AmphibiousCar implements LandVehicle, WaterVehicle{
 	public void startEngine() {
 		LandVehicle.super.startEngine();
 		WaterVehicle.super.startEngine();
-		System.out.println("AmphibiousCar ready to race!");
+		System.out.println("AmphibiousCars ready to race!");
 }}
 public class Car {
 
@@ -18,5 +18,4 @@ public class Car {
 		AmphibiousCar ac = new AmphibiousCar();
 		ac.startEngine();
 	}
-
 }
