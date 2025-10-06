@@ -32,12 +32,15 @@ class Details{
 }
 public class Book {
 	public static void main(String[] args) {
-		Details d= new Details("Krishna and his Leela", "Vyedavyasa", 1234567,10);
+		Details d= new Details("Krishna and his Leela", "ABC", 1234567,1);
+		Details e= new Details("Krishna", "ABCD", 123456789,10);
 		d.displayInfo();
 		d.borrowBook();
 		d.borrowBook();
 		d.returnBook();
-		d.displayInfo();
-		
+		d.displayInfo();	
+		e.borrowBook();
+		e.displayInfo();
+		e.displayInfo();	
 	}
 }

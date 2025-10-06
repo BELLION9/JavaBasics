@@ -45,21 +45,3 @@ class Students extends User {
         } else {
             System.out.println(name + " cannot borrow " + quantity + " books. Max limit is " + MAX_BORROW);
 }}}
-class Faculty extends User {
-    private static final int MAX_BORROW = 10;
-    public Faculty(String name, String userID) {
-        super(name, userID);
-    }
-    public void borrowBook(String bookName) {
-        if (borrowedBooks < MAX_BORROW) {
-            super.borrowBook(bookName);
-        } else {
-            System.out.println(name + " has reached the maximum limit of " + MAX_BORROW + " books.");
-        }
-    }
-    public void borrowBook(String bookName, int quantity) {
-        if (borrowedBooks + quantity <= MAX_BORROW) {
-            super.borrowBook(bookName, quantity);
-        } else {
-            System.out.println(name + " cannot borrow " + quantity + " books. Max limit is " + MAX_BORROW);
-}}}

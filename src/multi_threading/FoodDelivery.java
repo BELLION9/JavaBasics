@@ -16,7 +16,7 @@ class DeliveryTask extends Thread{
 public class FoodDelivery {
 
 	public static void main(String[] args) throws InterruptedException {
-		Thread orderThread = new DeliveryTask("Order Recieved");
+		Thread orderThread = new DeliveryTask("Ordering Food");
 		Thread cookThread = new DeliveryTask("Cooking Food");
 		Thread deliveryThread = new DeliveryTask("Delivering Food");
 		orderThread.setPriority(Thread.MAX_PRIORITY);
@@ -28,7 +28,6 @@ public class FoodDelivery {
 		cookThread.join();
 		deliveryThread.start();
 		deliveryThread.join();
-		
 	}
 
 }
