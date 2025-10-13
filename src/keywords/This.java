@@ -3,7 +3,9 @@ package keywords;
 public class This {
 	String company = "Caelius Consulting";
 	String name;
-	public This(String name) {this.name = name;}
+	public This(String n) {
+		this.name = n;
+		}
 	void showDetails() {
 		System.out.println(name+ " works at "+company);
 	}

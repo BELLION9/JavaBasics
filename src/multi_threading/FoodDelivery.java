@@ -23,11 +23,10 @@ public class FoodDelivery {
 		cookThread.setPriority(Thread.NORM_PRIORITY);
 		deliveryThread.setPriority(Thread.MIN_PRIORITY);
 		orderThread.start();
-		orderThread.join();
+		
 		cookThread.start();
-		cookThread.join();
+		
 		deliveryThread.start();
-		deliveryThread.join();
+		
 	}
-
 }
